@@ -1,6 +1,5 @@
 module Tests
 
-open System
 open Xunit
 open Turing.Tape
 open Turing.Instructions
@@ -8,7 +7,6 @@ open Turing.Machine
 open Turing
 
 let blankTape = intializeTape ""
-
 
 [<Fact>]
 let ``Initialize tape with empty string should work`` () =
@@ -55,8 +53,8 @@ let tape = intializeTape "110"
 
 let program = {
     states = 
-        [ { name = "q0"; transitions = [ ('1', '1', "q0", Right); ('0', '0', "q1", Right) ] |> toTransition }
-          { name = "q1"; transitions = [ (BLANK, BLANK, "q2", Stay) ] |> toTransition }
+        [ { name = "q0"; transitions = [ ('1', '1', "q0", Right); ('0', '0', "q1", Right) ] |> toTransitions }
+          { name = "q1"; transitions = [ (BLANK, BLANK, "q2", Stay) ] |> toTransitions }
           { name = "q2"; transitions = [] } ]
     initialStateName = "q0"
     finalStateNames = ["q2"]
@@ -108,20 +106,20 @@ let tellLike =
         [ { name = "q0"; transitions = [
             ('1', 'x', "q0", Right) 
             ('0', 'x', "q0", Right)
-            ('/', '/', "q1", Right) ] |> toTransition }
+            ('/', '/', "q1", Right) ] |> toTransitions }
           { name = "q1"; transitions = [
             ('1', '1', "q2", Left) 
             ('0', '0', "q2", Left)
-            (BLANK, BLANK, "q5", Left) ] |> toTransition }
+            (BLANK, BLANK, "q5", Left) ] |> toTransitions }
           { name = "q2"; transitions = [
             ('x', 'x', "q2", Left) 
-            ('/', '/', "q3", Left) ] |> toTransition }
+            ('/', '/', "q3", Left) ] |> toTransitions }
           { name = "q3"; transitions = [
-            ('x', 'x', "q4", Right) ] |> toTransition }
+            ('x', 'x', "q4", Right) ] |> toTransitions }
           { name = "q4"; transitions = [] } 
           { name = "q5"; transitions = [
             ('x', 'x', "q5", Left) 
-            (BLANK, BLANK, "q4", Right) ] |> toTransition } 
+            (BLANK, BLANK, "q4", Right) ] |> toTransitions } 
       ]
       initialStateName = "q0"
       finalStateNames = ["q4"]
