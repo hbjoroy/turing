@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "test", "test\test.fsproj", "{80E08D8C-20D5-455C-ADE6-8BEEF5EE299B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Turing", "turing\Turing.fsproj", "{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38292412-5443-4296-8D56-D997FDC2CE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38292412-5443-4296-8D56-D997FDC2CE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38292412-5443-4296-8D56-D997FDC2CE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38292412-5443-4296-8D56-D997FDC2CE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54831AF-604C-4BC9-93EB-D41B7347F0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54831AF-604C-4BC9-93EB-D41B7347F0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54831AF-604C-4BC9-93EB-D41B7347F0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54831AF-604C-4BC9-93EB-D41B7347F0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E08D8C-20D5-455C-ADE6-8BEEF5EE299B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E08D8C-20D5-455C-ADE6-8BEEF5EE299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E08D8C-20D5-455C-ADE6-8BEEF5EE299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E08D8C-20D5-455C-ADE6-8BEEF5EE299B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
