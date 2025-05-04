@@ -1,0 +1,8 @@
+### create turing
+
+POST http://localhost:5054/service/turing
+Content-Type: application/json
+
+{
+    "instructions": "Kilroy"
+}
