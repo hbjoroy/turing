@@ -1,20 +1,18 @@
 module Turing.Tape
 
-    
-
 type Tape = {
     Left: Symbol list
     Current: Symbol
     Right: Symbol list
 }
 
-let blank = '_'
+let BLANK = '_'
 
 let intializeTape (input: string) : Tape =
     let cells = input.ToCharArray() |> List.ofArray
     {
         Left = []
-        Current = if List.isEmpty cells then blank else List.head cells
+        Current = if List.isEmpty cells then BLANK else List.head cells
         Right = if List.isEmpty cells then [] else List.tail cells
     }
 
@@ -23,7 +21,7 @@ let moveLeft (tape: Tape) : Tape =
     | [] ->
         {
             Left = []
-            Current = blank
+            Current = BLANK
             Right = tape.Current :: tape.Right
         }
     | head :: tail ->
@@ -38,7 +36,7 @@ let moveRight (tape: Tape) : Tape =
     | [] -> 
         {
             Left = tape.Left @ [tape.Current]
-            Current = blank
+            Current = BLANK
             Right = []
         }
     | head :: tail ->

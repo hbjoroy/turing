@@ -12,7 +12,7 @@ type Transition = {
     movement: Movement
 }
 
-let tupleToTransition tupleList = 
+let toTransition tupleList = 
     let doMap  (current, write, newStateName, movement) = 
         { current = current; write = write; newStateName = newStateName; movement = movement }
     tupleList
