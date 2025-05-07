@@ -1,6 +1,8 @@
 ### create turing
 
-POST http://localhost:5054/service/turing
+POST https://localhost:5173/api/service/turing
+# POST https://localhost:7250/service/turing
+# POST http://localhost:5054/service/turing
 Content-Type: application/json
 
 {
