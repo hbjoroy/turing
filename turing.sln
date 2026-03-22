@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "test", "test\test.fsproj", 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Turing", "turing\Turing.fsproj", "{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "turingWeb", "turingWeb\turingWeb.fsproj", "{83CE8C52-163D-440D-81CC-105BD4F5132F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +34,9 @@ Global
 		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{661D5D13-1FF7-4EBA-ABF8-FF38A6F70FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CE8C52-163D-440D-81CC-105BD4F5132F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CE8C52-163D-440D-81CC-105BD4F5132F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CE8C52-163D-440D-81CC-105BD4F5132F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CE8C52-163D-440D-81CC-105BD4F5132F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
